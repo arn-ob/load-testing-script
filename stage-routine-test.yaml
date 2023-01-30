@@ -1,14 +1,14 @@
 config:
-  target: "https://api.10minuteschool.com"
+  target: "https://stage-api.10minuteschool.com"
   phases:
-    - duration: 5
-      arrivalRate: 5000000
+    - duration: 1
+      arrivalRate: 1000000000
       name: Sustained load
 
 scenarios:
   - flow:
       - get:
-          url: "/k12-course-service"
+          url: "/k12-course-service/api/v2/routine?program_id=142&page=home"
           headers: 
             authority: "api.10minuteschool.com"
             accept: "application/json, text/plain, */*"
