@@ -1,0 +1,19 @@
+config:
+  target: "https://stage-api.10minuteschool.net"
+  phases:
+    - duration: 20
+      arrivalRate: 5000000
+      name: Sustained load
+
+scenarios:
+  - flow:
+      - get:
+          url: "/k12-course-service"
+          headers: 
+            authority: "stage-api.10minuteschool.net"
+            accept: "application/json, text/plain, */*"
+            "accept-language": "en-US,en;q=0.9,bn;q=0.8"
+            authorization: ""
+            origin: "https://stage.10minuteschool.net"
+            publickey: ""
+            referer: "https://stage.10minuteschool.net"
