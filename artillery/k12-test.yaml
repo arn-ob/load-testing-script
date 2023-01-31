@@ -1,5 +1,5 @@
 config:
-  target: "https://api.10minuteschool.com"
+  target: "c"
   phases:
     - duration: 1
       arrivalRate: 3000
