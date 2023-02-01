@@ -1,8 +1,8 @@
 config:
   target: "c"
   phases:
-    - duration: 1
-      arrivalRate: 3000
+    - duration: 10
+      arrivalRate: 5000
       name: Sustained load
 
 scenarios:
