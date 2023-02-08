@@ -1,7 +1,7 @@
 const { exec } = require('node:child_process')
 
 
-for (let i = 0; i < 100; i++) {
+for (let i = 0; i < 5; i++) {
     exec(`artillery run art/routine-test-${i}.yaml`, function (err, out, code) {
         if (err instanceof Error)
             throw err

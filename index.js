@@ -18,7 +18,7 @@ config:
   target: "https://api.10minuteschool.com"
   phases:
     - duration: 5
-      arrivalRate: 100
+      arrivalRate: 100000
       name: Sustained load
 
 scenarios:
