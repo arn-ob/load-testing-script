@@ -1,5 +1,40 @@
 {
+  "name": "load-testing-script",
+  "version": "1.0.0",
+  "description": "Artillery run commend",
+  "main": "index.js",
+  "type": "module",
   "dependencies": {
-    "csvtojson": "^2.0.10"
+    "bluebird": "^3.7.2",
+    "csvtojson": "^2.0.10",
+    "is-utf8": "^0.2.1",
+    "jest": "^29.4.2",
+    "k6": "^0.0.0",
+    "lodash": "^4.17.21",
+    "strip-bom": "^2.0.0"
+  },
+  "scripts": {
+    "start": "k6 run k6/prod-basie-test.js",
+    "cloud": "k6 cloud k6/prod-basie-test.js",
+    "tests": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arn-ob/load-testing-script.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arn-ob/load-testing-script/issues"
+  },
+  "homepage": "https://github.com/arn-ob/load-testing-script#readme",
+  "devDependencies": {
+    "babel-jest": "^29.4.2",
+    "jest-puppeteer": "^7.0.0"
+  },
+  "jest": {
+    "preset": "jest-puppeteer"
   }
 }

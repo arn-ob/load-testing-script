@@ -13,14 +13,3 @@ for (let i = 0; i < 5; i++) {
         process.exit(code)
     })
 }
-
-// exec(`artillery run artillery/routine-test.yaml`, function (err, out, code) {
-//     if (err instanceof Error)
-//         throw err
-//     process.stderr.write(err)
-//     process.stdout.write(out)
-
-//     console.log(out);
-
-//     process.exit(code)
-// })
